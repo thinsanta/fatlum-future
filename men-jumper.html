@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link href="Style.css" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="All the top clothing brands at amazing prices right here!">
+    <meta name="keywords" content="Future clothing, clothing, clothes, fashion">
+    <meta name="author" content="Future Clothing">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Clothing</title>
+
+</head>
+<body>
+
+<div class="cart">
+    <i style="font-size:35px" class="fa"><a href="checkout.html" id="cart-icon">&#xf07a;</a></i>
+    <span id="timesClicked">0</span>
+</div>
+
+<header>
+    <h1>Future Clothing</h1>
+
+</header>
+<article>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a href="#">Products</a>
+            </button>
+            <div class="dropdown-content">
+                <a href="women-products.html">Women</a>
+                <a href="men-products.html">Men</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a href="checkout.html">Checkout</a>
+    </div>
+    <br>
+
+
+
+<div class="span">
+    <table>
+        <tr>
+            <td>
+                <div class="imgContainer">
+                    <div>
+                        <img src="images/black-jumper.jpg" alt="black-jumper" title="Black Jumper">
+                    </div>
+                    <div class="imgButton">
+                        <button value="button" onclick="javascript:btnClick()">ADD TO CART</button>
+                    </div>
+                    <div class="btn-cont">
+                        <button class="info-btn">DETAILS</button>
+                        <ul class="info1">Super nice!</ul>
+                    </div>
+                    <!--Button Comment-->
+                    <div class="btn-cont">
+                        <button class="comment" data-popup-open="popup-1">COMMENTS</button>
+                    </div>
+                    <!--Pop-up-->
+
+                    <div class="popup" data-popup="popup-1">
+                        <div class="popup-inner">
+                            <div id="review">
+                                <ul id="comments">
+                                    <li>
+                                        <span>
+                                            Jose
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment1">
+                                    Hur kommer det sig denna sidan är så bra??????
+                                </p>
+                                <ul id="comments2">
+                                    <li>
+                                        <span>
+                                            Fatlum
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment">
+                                    Så jävla bra produkt!
+                                </p>
+                            </div>
+                            <form action="/action_page.php" id="name-pop">
+                                Name: <input type="text" name="usrname1">
+                            </form>
+                            <br>
+                            <textarea id="text-pop" rows="6" cols="50" name="comment" form="name-pop"></textarea>
+                            <br>
+                            <input type="submit">
+
+                            <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                        </div>
+                    </div>
+                    <!--slut på popup -->
+                </div>
+            </td>
+            <td>
+                <div class="imgContainer">
+                    <div>
+                        <img src="images/red-jumper.jpg" alt="red-jumper" title="Burgundi Jumper">
+                    </div>
+                    <div class="imgButton">
+                        <button value="button" onclick="javascript:btnClick()">ADD TO CART</button>
+                    </div>
+                    <div class="btn-cont">
+                        <button class="info-btn">DETAILS</button>
+                        <ul class="info1">Super nice!</ul>
+                    </div>
+                    <!--Button Comment-->
+                    <div class="btn-cont">
+                        <button class="comment" data-popup-open="popup-1">COMMENTS</button>
+                    </div>
+                    <!--Pop-up-->
+
+                    <div class="popup" data-popup="popup-1">
+                        <div class="popup-inner">
+                            <div id="review">
+                                <ul id="comments">
+                                    <li>
+                                        <span>
+                                            Jose
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment1">
+                                    Hur kommer det sig denna sidan är så bra??????
+                                </p>
+                                <ul id="comments2">
+                                    <li>
+                                        <span>
+                                            Fatlum
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment">
+                                    Så jävla bra produkt!
+                                </p>
+                            </div>
+                            <form action="/action_page.php" id="name-pop">
+                                Name: <input type="text" name="usrname1">
+                            </form>
+                            <br>
+                            <textarea id="text-pop" rows="6" cols="50" name="comment" form="name-pop"></textarea>
+                            <br>
+                            <input type="submit">
+
+                            <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                        </div>
+                    </div>
+                    <!--slut på popup -->
+                </div>
+            </td>
+            <td>
+                <div class="imgContainer">
+                    <div>
+                        <img src="images/brown-jumper.jpg" alt="brown-jumper" title="Camel Jumper">
+
+                    </div>
+                    <div class="imgButton">
+                        <button value="button" onclick="javascript:btnClick()">ADD TO CART</button>
+                    </div>
+                    <div class="btn-cont">
+                        <button class="info-btn">DETAILS</button>
+                        <ul class="info1">Super nice!</ul>
+                    </div>
+                    <!--Button Comment-->
+                    <div class="btn-cont">
+                        <button class="comment" data-popup-open="popup-1">COMMENTS</button>
+                    </div>
+                    <!--Pop-up-->
+
+                    <div class="popup" data-popup="popup-1">
+                        <div class="popup-inner">
+                            <div id="review">
+                                <ul id="comments">
+                                    <li>
+                                        <span>
+                                            Jose
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment1">
+                                    Hur kommer det sig denna sidan är så bra??????
+                                </p>
+                                <ul id="comments2">
+                                    <li>
+                                        <span>
+                                            Fatlum
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment">
+                                    Så jävla bra produkt!
+                                </p>
+                            </div>
+                            <form action="/action_page.php" id="name-pop">
+                                Name: <input type="text" name="usrname1">
+                            </form>
+                            <br>
+                            <textarea id="text-pop" rows="6" cols="50" name="comment" form="name-pop"></textarea>
+                            <br>
+                            <input type="submit">
+
+                            <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                        </div>
+                    </div>
+                    <!--slut på popup -->
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <div class="price">
+                <p>High Neck Top In Black $9.99</p>
+                </div>
+            </td>
+
+            <td>
+                <div class="price">
+                <p>Dark Burgundi $12.99</p>
+                </div>
+            </td>
+
+            <td>
+                <div class="price">
+                <p>Turtle Neck Jumper $17.99</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+
+
+
+    <table>
+        <tr>
+            <td>
+                <div class="imgContainer">
+                    <div>
+                        <img src="images/blue-jumper.jpg" alt="blue-jumper" title="Blue Jumper">
+                    </div>
+                    <div class="imgButton">
+                        <button value="button" onclick="javascript:btnClick()">ADD TO CART</button>
+                    </div>
+                    <div class="btn-cont">
+                        <button class="info-btn">DETAILS</button>
+                        <ul class="info1">Super nice!</ul>
+                    </div>
+                    <!--Button Comment-->
+                    <div class="btn-cont">
+                        <button class="comment" data-popup-open="popup-1">COMMENTS</button>
+                    </div>
+                    <!--Pop-up-->
+
+                    <div class="popup" data-popup="popup-1">
+                        <div class="popup-inner">
+                            <div id="review">
+                                <ul id="comments">
+                                    <li>
+                                        <span>
+                                            Jose
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment1">
+                                    Hur kommer det sig denna sidan är så bra??????
+                                </p>
+                                <ul id="comments2">
+                                    <li>
+                                        <span>
+                                            Fatlum
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment">
+                                    Så jävla bra produkt!
+                                </p>
+                            </div>
+                            <form action="/action_page.php" id="name-pop">
+                                Name: <input type="text" name="usrname1">
+                            </form>
+                            <br>
+                            <textarea id="text-pop" rows="6" cols="50" name="comment" form="name-pop"></textarea>
+                            <br>
+                            <input type="submit">
+
+                            <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                        </div>
+                    </div>
+                    <!--slut på popup -->
+                </div>
+            </td>
+            <td>
+                <div class="imgContainer">
+                    <div>
+                        <img src="images/solid-jumper.jpg" alt="solid-jumper" title="Solid Jumper">
+                    </div>
+                    <div class="imgButton">
+                        <button value="button" onclick="javascript:btnClick()">ADD TO CART</button>
+                    </div>
+                    <div class="btn-cont">
+                        <button class="info-btn">DETAILS</button>
+                        <ul class="info1">Super nice!</ul>
+                    </div>
+                    <!--Button Comment-->
+                    <div class="btn-cont">
+                        <button class="comment" data-popup-open="popup-1">COMMENTS</button>
+                    </div>
+                    <!--Pop-up-->
+
+                    <div class="popup" data-popup="popup-1">
+                        <div class="popup-inner">
+                            <div id="review">
+                                <ul id="comments">
+                                    <li>
+                                        <span>
+                                            Jose
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment1">
+                                    Hur kommer det sig denna sidan är så bra??????
+                                </p>
+                                <ul id="comments2">
+                                    <li>
+                                        <span>
+                                            Fatlum
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment">
+                                    Så jävla bra produkt!
+                                </p>
+                            </div>
+                            <form action="/action_page.php" id="name-pop">
+                                Name: <input type="text" name="usrname1">
+                            </form>
+                            <br>
+                            <textarea id="text-pop" rows="6" cols="50" name="comment" form="name-pop"></textarea>
+                            <br>
+                            <input type="submit">
+
+                            <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                        </div>
+                    </div>
+                    <!--slut på popup -->
+                </div>
+            </td>
+            <td>
+                <div class="imgContainer">
+                    <div>
+                        <img src="images/pullbear-jumper.jpg" alt="pullbear-jumper" title="Pullbear Jumper">
+
+                    </div>
+                    <div class="imgButton">
+                        <button value="button" onclick="javascript:btnClick()">ADD TO CART</button>
+                    </div>
+                    <div class="btn-cont">
+                        <button class="info-btn">DETAILS</button>
+                        <ul class="info1">Super nice!</ul>
+                    </div>
+                    <!--Button Comment-->
+                    <div class="btn-cont">
+                        <button class="comment" data-popup-open="popup-1">COMMENTS</button>
+                    </div>
+                    <!--Pop-up-->
+
+                    <div class="popup" data-popup="popup-1">
+                        <div class="popup-inner">
+                            <div id="review">
+                                <ul id="comments">
+                                    <li>
+                                        <span>
+                                            Jose
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment1">
+                                    Hur kommer det sig denna sidan är så bra??????
+                                </p>
+                                <ul id="comments2">
+                                    <li>
+                                        <span>
+                                            Fatlum
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p id="usr-comment">
+                                    Så jävla bra produkt!
+                                </p>
+                            </div>
+                            <form action="/action_page.php" id="name-pop">
+                                Name: <input type="text" name="usrname1">
+                            </form>
+                            <br>
+                            <textarea id="text-pop" rows="6" cols="50" name="comment" form="name-pop"></textarea>
+                            <br>
+                            <input type="submit">
+
+                            <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                        </div>
+                    </div>
+                    <!--slut på popup -->
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <div class="price">
+                    <p>Crew Neck Jumper Blue 14.99</p>
+                </div>
+            </td>
+
+            <td>
+                <div class="price">
+                    <p>Solid Jumper ZigZag Design $19.99</p>
+                </div>
+            </td>
+
+            <td>
+                <div class="price">
+                    <p>Pull&Bear Jumper Navy $17.99</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+</div>
+</article>
+<footer>
+    <hr>
+    <article id="footer">
+        <section id="social">
+            <h4>Follow Us</h4>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </section>
+        <section id="career">
+            <h4>Career</h4>
+            <div class="career-links">
+                <a href="#">About Future Clothing</a>
+                <a href="#">Our Team</a>
+                <a href="#">Join Us</a>
+            </div>
+        </section>
+        <section id="contact">
+            <h4>Contact</h4>
+            <div class="contact-links">
+                <a href="#">Media Queries</a>
+                <a href="#">Online Store</a>
+                <a href="#">FAQ</a>
+            </div>
+        </section>
+    </article>
+
+</footer>
+
+
+<script src="jquery-3.2.1.js"></script>
+<script src="code.js"></script>
+</body>
+</html>

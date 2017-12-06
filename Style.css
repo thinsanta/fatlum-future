@@ -1,0 +1,1060 @@
+
+ @media screen and (max-width: 768px) {
+
+ }
+
+
+
+
+
+
+
+body {
+    font-family: Verdana;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+}
+h1{
+    font-family: Arial;
+    font-size: 70px;
+}
+article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+/* Navbar container */
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+    font-size: 16px;
+    color: dimgrey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+
+}
+
+/* The dropdown container */
+.dropdown {
+    display: inline;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    align-items: center;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: gainsboro;
+}
+
+
+
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+
+/*** CSS FOR HOME-PAGE ***/
+/*** CSS FOR HOME-PAGE ***/
+/*** CSS FOR HOME-PAGE ***/
+
+img{
+    display: inline-table;
+    align-self: flex-start;
+    width: 1000px;
+    height: auto;
+    float: left;
+
+
+}
+/*The "frame" for the slideshow, the shell.*/
+.slideshow
+{
+    width: 1000px;
+    height: 525px;
+    background-color: palevioletred;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 70px;
+    text-align: center;
+    overflow: hidden;
+}
+/*The images, lined up "inside" the shell*/
+.slideshow-images
+{
+    width: 3000px;
+    background-color: plum;
+    height: 400px;
+    clear: both;
+    position: relative;
+
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+/*Images shown, one by one*/
+.slider-image {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+/*Image 1*/
+#slider-image-1:target ~ .slideshow-images
+{
+    left: 0px;
+}
+/*Image 2*/
+#slider-image-2:target ~ .slideshow-images
+{
+    left: -1000px;
+}
+/*Image 3*/
+#slider-image-3:target ~ .slideshow-images
+{
+    left: -2000px;
+}
+/*The button placement*/
+.button-holder
+{
+    position: relative;
+    top: -20px;
+}
+/*Buttons design*/
+.slider-change
+{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: palevioletred;
+}
+#box{
+    width: 800px;
+    align-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+p{
+    font-family: Arial;
+    font-size: 18px;
+}
+
+/*** CSS FOR FOOTER ***/
+/*** CSS FOR FOOTER ***/
+/*** CSS FOR FOOTER ***/
+
+hr{
+    border: 3px dotted;
+    border-style: none none dotted;
+    color: gainsboro;
+    background-color: #fff;
+}
+h4{
+    font-family: Arial;
+    color: palevioletred;
+
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background-color: palevioletred;
+    color: white;
+
+}
+
+/* Twitter */
+.fa-twitter {
+    background-color: palevioletred;
+    color: white;
+}
+/*Instagram*/
+.fa-instagram{
+    background-color: palevioletred;
+    color: white;
+
+
+}
+/*Places different sections in row*/
+#footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+#social{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-bottom: auto;
+
+}
+#career{
+    margin-bottom: auto;
+
+}
+.career-links a{
+    text-decoration: none;
+    color: dimgrey;
+    display: flex;
+    flex-direction: column;
+}
+#contact{
+    margin-bottom: auto;
+}
+.contact-links a{
+    text-decoration: none;
+    color: dimgrey;
+    display: flex;
+    flex-direction: column;
+}
+/*** RESPONSIVE ***/
+@media screen {
+    main {
+        width: 75%;
+        display: flex;
+    }
+}
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* PRODUKT CSS */
+/* PRODUKT CSS */
+/* PRODUKT CSS */
+/* PRODUKT CSS */
+/* PRODUKT CSS */
+/* PRODUKT CSS */
+/* PRODUKT CSS */
+
+
+
+.ul ul{
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.ul a{
+    text-align: center;
+}
+
+
+
+#women-knitwear {
+
+    background-image: url(images/bild5.jpg);
+    display:block;
+    float: left;
+    height:350px;
+    text-indent:-9999px;
+    width:250px;
+    margin: 0px 20px 0px 20px;
+
+}
+#women-jackets {
+
+    background-image:url(images/jacket123.jpg);
+    display:block;
+    float: left;
+    height:350px;
+    text-indent:-9999px;
+    width:250px;
+    margin: 0px 20px 0px 20px;
+}
+#women-jeans {
+
+    background-image:url(images/jeans123.jpg);
+    display:block;
+
+    float: left;
+    height:350px;
+    text-indent:-9999px;
+    width:250px;
+    margin: 0px 20px 0px 20px;
+}
+
+#men-jumper {
+
+    background-image: url(images/menjumper.jpg);
+    display:block;
+    float: left;
+    height:350px;
+    text-indent:-9999px;
+    width:250px;
+    margin: 0px 20px 0px 20px;
+
+}
+#men-jackets {
+
+    background-image:url(images/herrjacket.jpg);
+    display:block;
+    float: left;
+    height:350px;
+    text-indent:-9999px;
+    width:250px;
+    margin: 0px 20px 0px 20px;
+}
+#men-jeans {
+
+    background-image:url(images/menjeans.jpg);
+    display:block;
+    float: left;
+    height:350px;
+    text-indent:-9999px;
+    width:250px;
+    margin: 0px 20px 0px 20px;
+}
+
+
+
+.product-btn{
+
+    text-align:center;
+
+}
+
+
+
+.women-btn {
+
+
+    background-color: white;
+    border: 1px solid dimgrey;
+    list-style-type: none;
+    padding: 7px 10px;
+    text-align: center;
+    margin: 0px 17px 0px 17px;
+    width: 250px;
+
+
+}
+
+.women-btn a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.women-btn:hover {
+    background-color: gainsboro;
+
+}
+
+/* herr jumpers */
+
+
+.imgButton {
+
+    margin-top: 10px;
+}
+
+.imgButton button{
+
+    background-color: white; /* Green */
+    border: 1px solid dimgrey;
+    color: black;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+
+}
+
+.imgButton button:hover {
+    background: gainsboro;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.imgContainer img, .imgContainer .imgButton button {
+    width: 100%;
+
+}
+
+button:focus { outline:0 !important; }
+
+    table {
+    display: flex;
+    justify-content: center;
+
+}
+
+button:focus { outline:0 !important; }
+
+.imgContainer {
+
+        margin: 0px 20px 0px 20px;
+
+
+}
+
+.imgContainer img {
+
+    width:250px;
+    height: 350px;
+
+
+}
+
+.price {
+                display: flex;
+                justify-content: space-around;
+                margin: 0px 20px 0px 20px;
+                width: 250px;
+}
+
+.price p {
+    font-size: 12px;
+    color: dimgrey;
+
+}
+
+
+/* CSS CONTACT */
+/* CSS CONTACT */
+/* CSS CONTACT */
+/* CSS CONTACT */
+/* CSS CONTACT */
+/* CSS CONTACT */
+/* CSS CONTACT */
+
+
+h2{
+    font-family: verdana;
+    text-align: center;
+    font-size: 200%;
+}
+
+form{
+    display: inline-block;
+    font-weight: bold;
+    justify-content: left;
+    margin-left: -307px;
+    font-family: arial;
+    font-size: 80%;
+
+
+}
+textarea{
+ background-color: #f0f0f0;
+ border-style: hidden;
+ resize: none;
+ font-family: arial;
+
+
+}
+
+
+input[type=submit]{
+border: none;
+    color: black;
+    padding: 10px 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+.form{
+line-height: 120%;
+}
+
+input{
+background-color: #f0f0f0;
+border-style: hidden;
+
+
+}
+
+.retur{
+ display: inline-block;
+     display: flex;
+     justify-content: center;
+     margin: auto;
+     overflow: hidden;
+     background-color: white;
+     font-family: Arial;
+     font-weight: bold;
+     border-top: 1px solid lightgrey;
+     border-bottom: 1px solid lightgrey;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    list-style: none;
+    width: 673px;
+
+
+
+     }
+.retur a{
+            font-size: 16px;
+             color: black;
+             text-align: left;
+             padding: 14px 16px;
+             text-decoration: none;
+
+             }
+
+
+
+             /* PRODUCT BOX */
+
+
+
+ /*
+I wanted to go with a mobile first approach, but it actually lead to more verbose CSS in this case, so I've gone web first. Can't always force things...
+
+Side note: I know that this style of nesting in SASS doesn't result in the most performance efficient CSS code... but on the OCD/organizational side, I like it. So for CodePen purposes, CSS selector performance be damned.
+*/
+ /* Global settings */
+ /* Global "table" column settings */
+
+ #shopping-header{
+
+     color: #aaaaaa;
+     font-size: 40px;
+ }
+ .product-image {
+     float: left;
+     width: 20%;
+ }
+
+ .product-details {
+     float: left;
+     width: 37%;
+ }
+
+ .product-price {
+     float: left;
+     width: 12%;
+ }
+
+ .product-quantity {
+     float: left;
+     width: 10%;
+ }
+
+ .product-removal {
+     float: left;
+     width: 9%;
+ }
+
+ .product-line-price {
+     float: left;
+     width: 12%;
+     text-align: right;
+ }
+
+ /* This is used as the traditional .clearfix class */
+ .group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
+ .group:after,
+ .shopping-cart:after,
+ .column-labels:after,
+ .product:after,
+ .totals-item:after {
+     content: '';
+     display: table;
+ }
+
+ .group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
+     clear: both;
+ }
+
+ .group, .shopping-cart, .column-labels, .product, .totals-item {
+     zoom: 1;
+ }
+
+ /* Apply clearfix in a few places */
+ /* Apply dollar signs */
+ .product .product-price:before, .product .product-line-price:before, .totals-value:before {
+     content: '$';
+ }
+
+ /* Body/Header stuff */
+ body {
+     padding: 0px 30px 30px 20px;
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 100;
+ }
+
+ h1 {
+     font-weight: 100;
+ }
+
+ label {
+     color: #aaa;
+ }
+
+ .shopping-cart {
+     margin-top: 45px;
+     margin-left: 60px;
+     margin-right: 60px;
+ }
+
+ /* Column headers */
+ .column-labels label {
+     padding-bottom: 15px;
+     margin-bottom: 15px;
+     border-bottom: 1px solid #eee;
+ }
+ .column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+     text-indent: -9999px;
+ }
+
+ /* Product entries */
+ .product {
+     margin-bottom: 20px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid #eee;
+ }
+ .product .product-image {
+     text-align: center;
+ }
+ .product .product-image img {
+     width: 100px;
+ }
+ .product .product-details .product-title {
+     margin-right: 20px;
+     font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+ }
+ .product .product-details .product-description {
+     margin: 5px 20px 5px 0;
+     line-height: 1.4em;
+ }
+ .product .product-quantity input {
+     width: 40px;
+ }
+ .product .remove-product {
+     border: 0;
+     padding: 4px 8px;
+     background-color: #c66;
+     color: #fff;
+     font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+     font-size: 12px;
+     border-radius: 3px;
+ }
+ .product .remove-product:hover {
+     background-color: #a44;
+ }
+
+ /* Totals section */
+ .totals .totals-item {
+     float: right;
+     clear: both;
+     width: 100%;
+     margin-bottom: 10px;
+ }
+ .totals .totals-item label {
+     float: left;
+     clear: both;
+     width: 79%;
+     text-align: right;
+ }
+ .totals .totals-item .totals-value {
+     float: right;
+     width: 21%;
+     text-align: right;
+ }
+ .totals .totals-item-total {
+     font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+ }
+
+ .checkout {
+     float: right;
+     border: 0;
+     margin-top: 20px;
+     padding: 6px 25px;
+     background-color: #6b6;
+     color: #fff;
+     font-size: 25px;
+     border-radius: 3px;
+ }
+
+ .checkout:hover {
+     background-color: #494;
+ }
+
+ /* Make adjustments for tablet */
+ @media screen and (max-width: 650px) {
+     .shopping-cart {
+         margin: 0;
+         padding-top: 30px;
+         border-top: 1px solid #eee;
+     }
+
+     .column-labels {
+         display: none;
+         margin-top: 30px;
+     }
+
+     .product-image {
+         float: right;
+         width: auto;
+     }
+     .product-image img {
+         margin: 0 0 10px 10px;
+     }
+
+     .product-details {
+         float: none;
+         margin-bottom: 10px;
+         width: auto;
+     }
+
+     .product-price {
+         clear: both;
+         width: 70px;
+     }
+
+     .product-quantity {
+         width: 100px;
+     }
+     .product-quantity input {
+         margin-left: 20px;
+     }
+
+     .product-quantity:before {
+         content: 'x';
+     }
+
+     .product-removal {
+         width: auto;
+     }
+
+     .product-line-price {
+         float: right;
+         width: 70px;
+     }
+ }
+ /* Make more adjustments for phone */
+ @media screen and (max-width: 350px) {
+     .product-removal {
+         float: right;
+     }
+
+     .product-line-price {
+         float: right;
+         clear: left;
+         width: auto;
+         margin-top: 10px;
+     }
+
+     .product .product-line-price:before {
+         content: 'Item Total: $';
+     }
+
+     .totals .totals-item label {
+         width: 60%;
+     }
+     .totals .totals-item .totals-value {
+         width: 40%;
+     }
+ }
+
+
+
+
+
+ /* PAYMENT BUTTON */
+
+             .outer-button-box {
+                 height: 50px;
+                 display: flex;
+                 justify-content: center;
+             }
+
+             .button-box {
+                 width: 600px;
+                 display: flex;
+                 justify-content: flex-end;
+             }
+
+             #pay-button {
+                 background-color: #ddd;
+                 border: none;
+                 font-size: 16px;
+                 color: dimgrey;
+             }
+
+             /*INFO KNITWEAR BUTTON*/
+
+            .info1 {
+                display: none;
+                font-size: 12px;
+                color: dimgrey;
+                max-width: 200px;
+            }
+
+ .info2 {
+     display: none;
+ }
+
+ .info3 {
+     display: none;
+ }
+
+ .btn-cont button{
+
+     background-color: white;
+     border: 1px solid dimgrey;
+     color: black;
+     padding: 7px 10px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     flex-direction: row;
+
+
+ }
+
+ .btn-cont button:hover {
+     background: gainsboro;
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ .btn-cont {
+
+     margin-top: 10px;
+ }
+
+
+.btn-cont button {
+     width: 100%;
+
+ }
+
+ .btn-cont button:focus { outline:0 !important; }
+
+ td {
+     vertical-align: top;
+ }
+
+
+
+
+ .cart {
+     display: block;
+     float: right;
+     color: palevioletred;
+     position: fixed;
+     right: 30px;
+ }
+
+ #cart-icon{
+     text-decoration: none;
+     color: palevioletred;
+ }
+
+
+ #timesClicked {
+     font-size: 30px;
+ }
+
+
+ /*POP-UP*/
+ /*POP-UP*/
+ /*POP-UP*/
+ /*POP-UP*/
+ /* Outer */
+ .popup {
+     width:100%;
+     height:100%;
+     display:none;
+     position:fixed;
+     top:0px;
+     left:0px;
+     background:rgba(0,0,0,0.75);
+ }
+
+ /* Inner */
+ .popup-inner {
+     max-width:700px;
+     width:90%;
+     padding:40px;
+     position:absolute;
+     top:50%;
+     left:50%;
+     -webkit-transform:translate(-50%, -50%);
+     transform:translate(-50%, -50%);
+     box-shadow:0px 2px 6px rgba(0,0,0,1);
+
+     border-radius:3px;
+     background:#fff;
+
+ }
+
+ /* Close Button */
+ .popup-close {
+     width:30px;
+     height:30px;
+     padding-top:4px;
+     display:inline-block;
+     position:absolute;
+     top:0px;
+     right:0px;
+     transition:ease 0.25s all;
+     -webkit-transform:translate(50%, -50%);
+     transform:translate(50%, -50%);
+     border-radius:1000px;
+     background:rgba(0,0,0,0.8);
+     font-family:Arial, Sans-Serif;
+     font-size:20px;
+     text-align:center;
+     line-height:100%;
+     color:#fff;
+ }
+
+ .popup-close:hover {
+     -webkit-transform:translate(50%, -50%) rotate(180deg);
+     transform:translate(50%, -50%) rotate(180deg);
+     background:rgba(0,0,0,1);
+     text-decoration:none;
+ }
+ /*textare i popup*/
+ #text-pop{
+     border-color: transparent;
+     background-color: beige;
+     resize: none;
+ }
+
+ #name-pop{
+     padding-left: 309px;
+     margin-top: 70px;
+     margin-bottom: 10px;
+     font-weight: bold;
+     font-family: arial;
+     font-size: 80%;
+ }
+ #comments,#comments2{
+     list-style-type: none;
+     margin-bottom: 10px;
+     margin-top: 20px;
+     padding: 0;
+
+
+
+ }
+ span{
+     font-family: Arial;
+     font-weight: bold;
+     font-size: 80%;
+
+
+ }
+ #usr-comment,#usr-comment1{
+     border-bottom: 1px solid lightgrey;
+     font-size: 15px;
+ }
+ input{
+     background-color: #f0f0f0;
+     border-style: hidden;
+
+ }
+ input[type=submit]{
+     border: none;
+     color: black;
+     padding: 10px 22px;
+     text-decoration: none;
+     margin: 4px 2px;
+     cursor: pointer;
+
+ }
+ .btn-comment button:hover {
+     background: gainsboro;
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+
+
+
+

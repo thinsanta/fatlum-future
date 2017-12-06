@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="Style.css">
+
+
+
+</head>
+
+<body>
+
+<header>
+    <h1>Future Clothing</h1>
+
+</header>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">
+            <a href="#">Products</a>
+        </button>
+        <div class="dropdown-content">
+            <a href="women-products.html">Women</a>
+            <a href="men-products.html">Men</a>
+        </div>
+    </div>
+    <a href="contact.html">Contact</a>
+    <a href="checkout.html">Checkout</a>
+</div>
+<br>
+<div class="product-reset">
+    <button class="reset-product">
+        Reset products
+    </button>
+</div>
+
+
+<div class="shopping-cart">
+
+    <div class="column-labels">
+        <label class="product-image">Image</label>
+        <label class="product-details">Product</label>
+        <label class="product-price">Price</label>
+        <label class="product-quantity">Quantity</label>
+        <label class="product-removal">Remove</label>
+        <label class="product-line-price">Total</label>
+    </div>
+
+<div class="p-1">
+    <div class="product">
+        <div class="product-image">
+            <img src="images/redknitwear.jpg">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Red Knitwear</div>
+            <p class="product-description">The best knitwear of all time. Holy crap. You will love it!</p>
+        </div>
+        <div class="product-price">12.99</div>
+        <div class="product-quantity">
+            <input type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+            <button class="remove-product">
+                Remove
+            </button>
+        </div>
+
+        <div class="product-line-price">12.99</div>
+    </div>
+</div>
+
+    <div class="p-2">
+    <div class="product">
+        <div class="product-image">
+            <img src="images/blackknitwear.jpg">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Black Knitwear</div>
+            <p class="product-description">Who doesn't like a black knitwear ? After a night of binge drinking in Manhattan. You will be happy you didn't wear white!</p>
+        </div>
+        <div class="product-price">45.99</div>
+        <div class="product-quantity">
+            <input type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+            <button class="remove-product">
+                Remove
+            </button>
+        </div>
+        <div class="product-line-price">45.99</div>
+    </div>
+    </div>
+
+
+    <div class="totals">
+        <div class="totals-item">
+            <label>Subtotal</label>
+            <div class="totals-value" id="cart-subtotal">58,98</div>
+        </div>
+        <div class="totals-item">
+            <label>Tax (5%)</label>
+            <div class="totals-value" id="cart-tax">2.95</div>
+        </div>
+        <div class="totals-item">
+            <label>Shipping</label>
+            <div class="totals-value" id="cart-shipping">15.00</div>
+        </div>
+        <div class="totals-item totals-item-total">
+            <label>Grand Total</label>
+            <div class="totals-value" id="cart-total">76.93</div>
+        </div>
+    </div>
+
+    <button class="checkout">Checkout</button>
+
+</div>
+
+
+<footer>
+    <hr>
+    <article id="footer">
+        <section id="social">
+            <h4>Follow Us</h4>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </section>
+        <section id="career">
+            <h4>Career</h4>
+            <div class="career-links">
+                <a href="#">About Future Clothing</a>
+                <a href="#">Our Team</a>
+                <a href="#">Join Us</a>
+            </div>
+        </section>
+        <section id="contact">
+            <h4>Contact</h4>
+            <div class="contact-links">
+                <a href="#">Media Queries</a>
+                <a href="#">Online Store</a>
+                <a href="#">FAQ</a>
+            </div>
+        </section>
+    </article>
+
+</footer>
+
+<script src="jquery-3.2.1.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
