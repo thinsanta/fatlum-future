@@ -25,8 +25,9 @@ function btnClick(){
 
 /* Set rates + misc */
 var taxRate = 0.05;
-var shippingRate = 15.00;
+var shippingRate = 4.99;
 var fadeTime = 300;
+
 
 
 /* Assign actions */
@@ -42,7 +43,52 @@ $('.product-reset button').click( function () {
     resetBody(this);
 });
 
+setShippingRate();
 
+$('body').on( 'click', '.checkout', function() {
+    $('.form-section').show(fadeTime);
+});
+
+$('body').on("click", "#submit", function(){                    // fick inte detta att funka som det ska. på grund av brist på tid kvar så skickar vi in projektet såhär
+    $(".shopping-cart, .confirmation").toggle();
+});
+
+/*$('#submit button').click( function() {
+    $('.shopping-cart').hide();
+    $('.confirmation').show();
+});*/
+
+
+/* Set shipping rate */
+function setShippingRate () {
+
+    $('#home-delivery').on('click', function() {
+
+        if ($(this).is(':checked')) {
+            shippingRate = +$(this).val();
+            $('#cart-shipping').text(shippingRate);
+            recalculateCart();
+        }
+    });
+
+    $('#express-delivery').on('click', function() {
+
+        if ($(this).is(':checked')) {
+            shippingRate = +$(this).val();
+            $('#cart-shipping').text(shippingRate);
+            recalculateCart();
+        }
+    });
+
+    $('#pick-up').on('click', function() {
+
+    if ($(this).is(':checked')) {
+        shippingRate = +$(this).val();
+        $('#cart-shipping').text(shippingRate);
+        recalculateCart();
+        }
+    });
+}
 
 /* Recalculate cart */
 function recalculateCart()
@@ -51,7 +97,8 @@ function recalculateCart()
 
     /* Sum up row totals */
     $('.product').each(function () {
-        subtotal += parseFloat($(this).children('.product-line-price').text());
+
+        subtotal += +$(this).find('.product-line-price').text();
     });
 
     /* Calculate totals */
@@ -63,7 +110,7 @@ function recalculateCart()
     $('.totals-value').fadeOut(fadeTime, function() {
         $('#cart-subtotal').html(subtotal.toFixed(2));
         $('#cart-tax').html(tax.toFixed(2));
-        $('#cart-shipping').html(shipping.toFixed(2));
+        $('#cart-shipping').html(shippingRate.toFixed(2));
         $('#cart-total').html(total.toFixed(2));
         if(total == 0){
             $('.checkout').fadeOut(fadeTime);

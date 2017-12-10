@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="Style.css">
-
+    <link rel="stylesheet" href="style-form.css">
 
 
 </head>
@@ -53,28 +53,28 @@
         <label class="product-line-price">Total</label>
     </div>
 
-<div class="p-1">
-    <div class="product">
-        <div class="product-image">
-            <img src="images/redknitwear.jpg">
-        </div>
-        <div class="product-details">
-            <div class="product-title">Red Knitwear</div>
-            <p class="product-description">The best knitwear of all time. Holy crap. You will love it!</p>
-        </div>
-        <div class="product-price">12.99</div>
-        <div class="product-quantity">
-            <input type="number" value="1" min="1">
-        </div>
-        <div class="product-removal">
-            <button class="remove-product">
-                Remove
-            </button>
-        </div>
+    <div class="p-1">
+        <div class="product">
+            <div class="product-image">
+                <img src="images/redknitwear.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Red Knitwear</div>
+                <p class="product-description">The best knitwear of all time. Holy crap. You will love it!</p>
+            </div>
+            <div class="product-price">12.99</div>
+            <div class="product-quantity">
+                <input class="quantity" type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
 
-        <div class="product-line-price">12.99</div>
+            <div class="product-line-price">12.99</div>
+        </div>
     </div>
-</div>
 
     <div class="p-2">
     <div class="product">
@@ -87,7 +87,7 @@
         </div>
         <div class="product-price">45.99</div>
         <div class="product-quantity">
-            <input type="number" value="1" min="1">
+            <input class="quantity" type="number" value="1" min="1">
         </div>
         <div class="product-removal">
             <button class="remove-product">
@@ -97,6 +97,25 @@
         <div class="product-line-price">45.99</div>
     </div>
     </div>
+
+
+
+    <div class="delivery">
+        <label>
+            <input type="radio" class="option-input radio" id="home-delivery" name="delivery-type" value="4.99" checked />
+            Home Delivery - $4.99
+        </label>
+        <label>
+            <input type="radio" class="option-input radio" id="express-delivery" name="delivery-type" value="7.99"/>
+            Express Delivery - $7.99
+        </label>
+        <label>
+            <input type="radio" class="option-input radio" id="pick-up" name="delivery-type" value="0.00"/>
+            Pick up at store - Free
+        </label>
+    </div>
+
+
 
 
     <div class="totals">
@@ -110,17 +129,49 @@
         </div>
         <div class="totals-item">
             <label>Shipping</label>
-            <div class="totals-value" id="cart-shipping">15.00</div>
+            <div class="totals-value" id="cart-shipping">4.99</div>
         </div>
         <div class="totals-item totals-item-total">
             <label>Grand Total</label>
-            <div class="totals-value" id="cart-total">76.93</div>
+            <div class="totals-value" id="cart-total">66.92</div>
         </div>
     </div>
 
-    <button class="checkout">Checkout</button>
+    <div class="checkout-box">
+        <button class="checkout">Checkout</button>
+    </div>
+</section>
+
 
 </div>
+
+<section class="form-section">
+    <header id="customer-details">CUSTOMER DETAILS</header>
+
+    <form id="form" class="topBefore">
+        <input class="form-input" type="text" id="first-name" placeholder="FIRST NAME">
+        <input class="form-input" type="text" id="last-name" placeholder="LAST NAME">
+        <input class="form-input" type="email" id="email" placeholder="E-MAIL">
+        <input class="form-input" type="text" id="address" placeholder="ADDRESS">
+        <input class="form-input" type="text" id="zip-code" placeholder="ZIP-CODE">
+        <input class="form-input" type="text" id="city" placeholder="CITY">
+        <input class="form-input" type="text" id="country" placeholder="COUNTRY">
+        <textarea id="message" type="text" placeholder="MESSAGE (OPTIONAL)"></textarea>
+        <button class="form-input" id="submit">PURCHASE ORDER</button>
+    </form>
+</section>
+
+<section class="confirmation">
+
+    <h3>Thank you for your purchase!</h3>
+
+    <p>
+        Thank you for shopping at Future Clothing, you will get an order confirmation sent to your e-mail.
+        We hope that you'll be satisfied with our products and come back to Future in the future ;)
+    </p>
+
+</section>
+
 
 
 <footer>
